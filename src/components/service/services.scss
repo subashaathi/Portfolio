@@ -7,6 +7,10 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @include mobile{
+        display: block;
+     }
+
     .textContiner{
         flex: 1;
         align-self: flex-end;
@@ -27,7 +31,13 @@
             text-align: right;
         }
 
-        hr{
+        @include mobile{
+            align-self: center;
+            text-align: center;
+            flex-direction: column;
+         }
+
+        h1{
             width: 500px;
             bottom: none;
             border-top: 0.5px solid gray;
@@ -66,6 +76,10 @@
                 border-radius: 50px;
                 object-fit: cover;
             }
+
+            @include mobile{
+               top: 50px;
+             }
             h1{
                 font-size: 96px;
                 font-weight: 100;
@@ -103,15 +117,13 @@
                     height: 50px;
                 }
             }
-            button:active{
-                background-color: orange;
-
+            
                 @include mobile{
                     font-size: 16px;
                     width: 150px;
                     height: 50px;
                 }
-            }
+            
         }
 
     }
@@ -122,12 +134,7 @@
         margin: auto;
 
         @include mobile{
-            display: flex;
-            flex-direction: column;
-           
-            width: 100%;
-            align-items: center;
-            gap: 5px;
+            display: none;
         }
         
 

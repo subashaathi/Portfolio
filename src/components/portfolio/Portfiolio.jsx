@@ -5,33 +5,33 @@ import {motion,useScroll,useSpring, useTransform} from "framer-motion"
 const items = [
     {
         id:1,
-        title:"construction App",
+        title:"Construction WebApplication",
         img:"./const.jpg",
-        desc:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, hic corporis corrupti odit modi molestiae culpa ullam error eius ipsa?",
+        desc:"Developed a real-time web application for detailed information, showcases features tracking applications and improveing clients for business",
         
     },
 
     {
         id:2,
-        title:"Weather App",
+        title:"Weather",
         img:"./weather.jpg",
-        desc:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, hic corporis corrupti odit modi molestiae culpa ullam error eius ipsa?",
+        desc:"Developed a Weather app to provide Accurate,Real-Time weather upates,forecasts.It enhances User Convenience,daily planing and preparedness for weather conditions",
 
     },
 
     {
         id:3,
-        title:"portfolio App",
+        title:"Portfolio",
         img:"./pexels.jpg",
-        desc:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, hic corporis corrupti odit modi molestiae culpa ullam error eius ipsa?",
+        desc:"Created a portfolio website to showcase my skills,It enhance personal Branding and provides a platform to demonstrate expertise and projects in an organized and visually appealling manner",
 
     },
 
     {
         id:4,
-        title:"E-com App",
+        title:"E-com site",
         img:"./ecom.jpg",
-        desc:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, hic corporis corrupti odit modi molestiae culpa ullam error eius ipsa?",
+        desc:"Designed an E-Com website to facilitate online buying and selling of products.It provides an user friendly interfacedetailed product listing and order management ",
 
     },
 ];
