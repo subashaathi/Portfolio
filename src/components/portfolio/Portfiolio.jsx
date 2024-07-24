@@ -5,36 +5,43 @@ import {motion,useScroll,useSpring, useTransform} from "framer-motion"
 const items = [
     {
         id:1,
-        title:"Construction WebApplication",
+        title:"construction App",
         img:"./const.jpg",
-        desc:"Developed a real-time web application for detailed information, showcases features tracking applications and improveing clients for business",
-        
+        desc:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, hic corporis corrupti odit modi molestiae culpa ullam error eius ipsa?",
+        link:"https://thola-associates-z2ac.vercel.app/"
     },
-
     {
         id:2,
-        title:"Weather",
-        img:"./weather.jpg",
-        desc:"Developed a Weather app to provide Accurate,Real-Time weather upates,forecasts.It enhances User Convenience,daily planing and preparedness for weather conditions",
-
+        title:"ToDo Using MERN Stack",
+        img:"./const.jpg",
+        desc:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, hic corporis corrupti odit modi molestiae culpa ullam error eius ipsa?",
+        link:"https://mern-todo-1-0z77.onrender.com/",
     },
 
     {
         id:3,
-        title:"Portfolio",
-        img:"./pexels.jpg",
-        desc:"Created a portfolio website to showcase my skills,It enhance personal Branding and provides a platform to demonstrate expertise and projects in an organized and visually appealling manner",
-
+        title:"Weather App",
+        img:"./weather.jpg",
+        desc:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, hic corporis corrupti odit modi molestiae culpa ullam error eius ipsa?",
+        link:"https://aatheessubash.github.io/first-BA/",
     },
 
     {
         id:4,
-        title:"E-com site",
-        img:"./ecom.jpg",
-        desc:"Designed an E-Com website to facilitate online buying and selling of products.It provides an user friendly interfacedetailed product listing and order management ",
-
+        title:"portfolio App",
+        img:"./pexels.jpg",
+        desc:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, hic corporis corrupti odit modi molestiae culpa ullam error eius ipsa?",
+        link:"https://portfolio-subash-seven.vercel.app/",
     },
-];
+
+    {
+        id:5,
+        title:"E-com App",
+        img:"./ecom.jpg",
+        desc:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, hic corporis corrupti odit modi molestiae culpa ullam error eius ipsa?",
+        link:"https://subashaathi.github.io/ai-rbnb/",
+    },
+]
 
 const Single =({item})=> {
     const ref = useRef()
@@ -56,7 +63,11 @@ const Single =({item})=> {
                         {item.title}
                     </h2>
                     <p>{item.desc}</p>
-                    <button>See Demo</button>
+
+                    <button key={item.id} onClick={() => window.open(item.link,'_blank')}>
+                            see demo
+                    </button>
+
                 </motion.div>
                 </div>
             </div>
